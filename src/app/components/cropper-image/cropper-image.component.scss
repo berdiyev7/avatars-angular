@@ -1,0 +1,15 @@
+.cropper {
+  &__container {
+    width: 180px;
+    height: 180px;
+  }
+  &__btn {
+    display: block;
+    margin-top: 10px;
+  }
+  &__preview {
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
+  }
+}

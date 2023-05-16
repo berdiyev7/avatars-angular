@@ -1,0 +1,15 @@
+<section>
+  <div class="content">
+    <h1>Avatar</h1>
+    <app-avatar [url]="uploadService.avatar" size="xlarge"></app-avatar>
+    <app-modal title="Загрузка фотографии">
+      <div class="content__modal">
+        <app-upload-images></app-upload-images>
+        <app-cropper-image *ngIf="changeImg.preview" [src]="changeImg.preview"></app-cropper-image>
+
+      </div>
+    </app-modal>
+    <app-error-message></app-error-message>
+    <app-success-message></app-success-message>
+  </div>
+</section>

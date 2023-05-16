@@ -1,0 +1,5 @@
+<p-button (click)="modalService.showDialog()" label="Изменить фотографию"></p-button>
+<p-dialog [header]="title" [(visible)]="modalService.visible" [modal]="true" class="modal" [draggable]="false"
+  [resizable]="false">
+  <ng-content></ng-content>
+</p-dialog>

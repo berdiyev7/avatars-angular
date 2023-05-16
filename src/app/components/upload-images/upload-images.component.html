@@ -1,0 +1,5 @@
+<label for="photoUpload" class="upload">
+  <input #photoUpload class="upload__input" type="file" accept=".png, .jpg, .jpeg"
+    (change)="handleImg.changeImages($event)" />
+  <p-button (click)="photoUpload.click()">Выбрать фото</p-button>
+</label>
